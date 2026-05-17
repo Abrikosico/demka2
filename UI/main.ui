@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblUser">
+        <property name="text">
+         <string>ФИО</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnOut">
+        <property name="text">
+         <string>Выход</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="page_guest">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QListWidget" name="listWidget"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_manager">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="btnOrders">
+            <property name="text">
+             <string>Заказы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchEdit"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboSort">
+            <item>
+             <property name="text">
+              <string>По возрастанию</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>По убыванию</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboSupplier"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidget_3"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_admin">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="btnOrders_2">
+            <property name="text">
+             <string>Зазказы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAdd">
+            <property name="text">
+             <string>Добавить товар</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchEdit_2"/>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboSort_2">
+            <item>
+             <property name="text">
+              <string>По возрастанию</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>По убыванию</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboSupplier_2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidget_4"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_client">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QListWidget" name="listWidget_2"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
